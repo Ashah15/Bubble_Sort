@@ -22,5 +22,7 @@ def bubble_sort_by array
     array
 end
 
-sort= bubble_sort_by([4,3,78,2,0,2])
-p bubble_sort_by(sort)
+sorted=bubble_sort_by(["hi","hello","hey"]) do |left,right|
+  left.length - right.length
+end
+p sorted
